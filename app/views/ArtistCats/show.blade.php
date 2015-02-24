@@ -1,0 +1,1 @@
+F:\PHP\htdocs\enwebstore_admiral\app/views/ArtistCats/show.blade.php
