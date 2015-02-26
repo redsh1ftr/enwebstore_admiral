@@ -1,1 +1,1 @@
-F:\PHP\htdocs\enwebstore_admiral\app/views/shows/show.blade.php
+F:\PHP\htdocs\etnoc_a\app/views/events/show.blade.php

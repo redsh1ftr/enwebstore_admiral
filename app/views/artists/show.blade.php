@@ -1,0 +1,1 @@
+C:\xampp\htdocs\enwebstore_admiral\app/views/artists/show.blade.php

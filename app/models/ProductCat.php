@@ -9,5 +9,5 @@ class ProductCat extends \Eloquent {
 
 	protected $fillable = ['name'];
 
-	protected $table = 'productCats';
+	protected $table = 'product_categ';
 }

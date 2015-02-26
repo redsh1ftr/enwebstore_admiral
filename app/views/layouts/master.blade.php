@@ -8,6 +8,11 @@
    <link rel="stylesheet" href="http://www.eternallynocturnal.com/store/public/foundation/css/foundation.css">
    <link rel="stylesheet" href="http://www.eternallynocturnal.com/store/public/foundation/css/normalize.css">
    <link rel="stylesheet" href="//localhost/enwebstore_admiral/public/foundation/foundation-icons/foundation-icons.css" />
+
+  
+
+
+
    <link rel="stylesheet" type="text/css" href="//localhost/enwebstore/public/date/jquery.datetimepicker.css"/ >
       <script src="http://www.eternallynocturnal.com/store/public/date/jquery.js"></script>
       <script src="http://www.eternallynocturnal.com/store/public/date/jquery.datetimepicker.js"></script>
@@ -162,7 +167,7 @@
                     
                     <li class="divider"></li>
                      <li class="has-dropdown">
-                      <a href="#">Shop</a>
+                      <a href="#">Contacts</a>
                       <ul class="dropdown">
                      <li >
                       
@@ -194,7 +199,7 @@
                         <li class="divider"></li>
                      <li>
                         Current Shows<br>
-                        New Show<br>
+                        <a href="#" data-reveal-id="newShow" data-reveal><i class="fi-plus"></i> New Show</a>
                         Media<br>
                       </li>
                       <li><label>Venues</label></li>
@@ -259,16 +264,14 @@
 @yield('content')
 
 
-<div id="newVenue" class="reveal-modal" style="height:700px;max-height:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
-          {{--CONTENT HERE--}}
+{{--MODAL CODES--}}
 
+{{--NEW VENUE HERE--}}
+      <div id="newVenue" class="reveal-modal" style="height:700px;max-height:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
+          
                                   {{View::make('venues.create')}}
                                   
-          {{--END CONTENT--}}
-
       <a class="close-reveal-modal">&#215;</a>
-
-
       </div>
 
 
@@ -276,9 +279,15 @@
 
                             {{View::make('contacts.create')}}
 
-
       <a class="close-reveal-modal">&#215;</a>
 
+      </div>
+
+      <div id="newShow" class="reveal-modal" style="height:700px;max-height:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
+
+                            {{View::make('shows.create')}}
+
+      <a class="close-reveal-modal">&#215;</a>
 
       </div>
 
@@ -286,12 +295,23 @@
 
                                 {{View::make('producers.create')}}
 
-          <a class="close-reveal-modal">&#215;</a>
+      <a class="close-reveal-modal">&#215;</a>
+
+
+       </div>
+
+       <div id="newProduct" class="reveal-modal" style="max-height:80%;overflow-y:scroll;background-color:#000000;" data-reveal> 
+
+                                {{View::make('producers.create')}}
+
+      <a class="close-reveal-modal">&#215;</a>
 
 
        </div>
 
 </div>
+
+
 </center>
 
 

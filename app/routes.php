@@ -42,3 +42,10 @@ Route::resource('venue', 'VenuesController');
 
 
 //------------------End Venue Routes
+
+
+//------------------Show Routes
+Route::resource('show', 'ShowsController');
+
+
+//------------------End Show Routes

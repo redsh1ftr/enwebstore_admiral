@@ -15,6 +15,23 @@ class CreateProducersTable extends Migration {
 		Schema::create('producers', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('name');
+			$table->text('description');
+			$table->string('category');
+			$table->string('price');
+			$table->string('paypal');
+			$table->integer('active');
+			$table->integer('onsale');
+			$table->integer('upcomming');
+			$table->integer('preorder');
+			$table->integer('xsmall');
+			$table->integer('small');
+			$table->integer('medium');
+			$table->integer('large');
+			$table->integer('xlarge');
+			$table->integer('xxlarge');
+			$table->integer('xxxlarge');
+			$table->integer('onesize');
 			$table->timestamps();
 		});
 	}

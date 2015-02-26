@@ -1,6 +1,6 @@
 <?php
 
-class Venue extends \Eloquent {
+class Artist extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = [
@@ -9,7 +9,5 @@ class Venue extends \Eloquent {
 
 	// Don't forget to fill this array
 	protected $fillable = [];
-
-	protected $table = 'venues';
 
 }
